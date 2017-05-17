@@ -40,5 +40,8 @@ module.exports = {
             inject: true,
             template: __dirname + '/public/index.html',
         }),
+
+        // Squash that code down
+        new webpack.optimize.UglifyJsPlugin({minimize: true})
     ]
 };
