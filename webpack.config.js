@@ -28,8 +28,18 @@ module.exports = {
                 "style-loader",
                 "css-loader",
                 "postcss-loader"
-            ]
-        }
+                ]  
+            },
+            {
+				test: /\.js$/, // include .js files
+				enforce: "pre", // preload the jshint loader
+				exclude: /node_modules/, // exclude any and all files in the node_modules folder
+				use: [
+					{
+						loader: "jshint-loader"
+					}
+				]
+            }
         ],
     },
 

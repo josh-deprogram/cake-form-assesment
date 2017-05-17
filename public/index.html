@@ -2,11 +2,54 @@
     <head>
         <meta charset="utf-8">
         <title>UsTwo Cake Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
     </head>
     <body>
-        <p>cakes</p>
-        <form> 
-            
+
+         <form> 
+            <p>
+                <label class='bold' for="name" required>Name:</label>
+                <input type="text" id="name" name="name" required/>
+            </p>
+
+            <p>
+                <label class='bold' for="email" name="emailLabel" required>Email:</label>
+                <input type="email" id="enquiry_email" name="email" required />
+            </p>
+
+            <label class='bold' name="caketypeLabel" required>Type of cake:</label>
+            <p>
+                <input class='bold' type="checkbox" value="type_cup" id="cup" name="cakes" />
+                <label for="cup">Cupcakes</label>
+            </p>
+            <p>
+                <input type="checkbox" value="type_cheese" id="cheese" name="cakes" />
+                <label for="cheese">Cheesecakes</label>
+            </p>
+            <p>
+                <input type="checkbox" value="type_butter" id="butter" name="cakes" />
+                <label for="butter">Butter cakes</label>
+            </p>
+            <p>
+                <input type="checkbox" value="type_mud" id="mud" name="cakes" />
+                <label for="mud">Mudcakes</label>
+            </p>
+
+            <label class='bold' for="caketype" name="caketypeLabel" required>Celebration type:</label>
+            <p><input type="radio" value="celebration_birthday" id="birthday" name="celebration" required/><label>Birthday</label></p>
+            <p><input type="radio" value="celebration_wedding" id="wedding" name="celebration" required/><label>celebration_wedding</label></p>
+            <p><input type="radio" value="celebration_corporate" id="corporate" name="celebration" required/><label>Corporate</label></p>
+            <p><input type="radio" value="celebration_other" id="other" name="celebration" required/><label>Other</label></p>
+            <input type="text" name="other" id="other_input" required />
+
+            <p>
+                <label class='bold' for="caketype" name="caketypeLabel" required>Tell us about your dream cake:</label><br/>
+                <textarea></textarea>
+            </p>
+
+            <input type='submit' value='Send away' />
+            <input type='reset' value='Restart' />
+
         </form>
     </body>
 </html>

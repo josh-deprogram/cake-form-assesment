@@ -1,4 +1,38 @@
 body {
-    background: red;
-    padding: 100px;
+    background: #374550;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'open-sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+form {
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+input, textarea {
+    font-weight: normal;
+    border: 1px solid white;
+    background: #69737c;
 }
