@@ -3,7 +3,9 @@ const validateInput = require('./validateInput');
 
 (() => {
 
-    console.log('Hello cake world');
+    console.log('%cHello UsTwo Cakez', 'background: #371b42; color: #ffffff; font-weight:300; padding:4px; font-size:15px');
+    console.log('%cinfo@deprogram.io', 'background: #7a4bff; color: #ffffff; font-weight:300; padding:4px; font-size:10px');
+
 
     // Basic form field validaiton on the Celebration Other Input type
     const validateForm = (e)=> {
