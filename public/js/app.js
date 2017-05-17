@@ -1,4 +1,5 @@
 require("../css/style.css");
+const validateInput = require('./validateInput');
 
 (() => {
 
@@ -17,18 +18,9 @@ require("../css/style.css");
             e.preventDefault();
             return false;
         }
-    }
+    };
     
     const cakeform = document.getElementById('cakeform');
     cakeform.addEventListener("submit", validateForm);
 
 })();
-
-// Expose Validator so can run test
-const validateInput = (input) => {
-  if (input.value === '') {
-    return true
-  } 
-}
-
-module.exports = validateInput;
