@@ -1,5 +1,23 @@
 {
+  "scripts": {
+    "start": "webpack",
+    "watch": "webpack --progress --colors --watch",
+    "serve": "serve build"
+  },
   "dependencies": {
+    "autoprefixer": "^7.1.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "css-loader": "^0.28.1",
+    "html-webpack-plugin": "^2.28.0",
+    "postcss-loader": "^2.0.5",
+    "serve": "^5.1.5",
+    "style-loader": "^0.17.0",
     "webpack": "^2.5.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0"
   }
 }
