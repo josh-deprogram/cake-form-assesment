@@ -7,49 +7,56 @@
     <body>
 
          <form> 
+            <fieldset>
+                <legend>Cake Enquiry Form</legend>
             <p>
                 <label class='bold' for="name" required>Name:</label>
-                <input type="text" id="name" name="name" required/>
+                <input class='input-field' type="text" id="name" name="name" />
             </p>
 
-            <p>
+            <p class='margin-top'>
                 <label class='bold' for="email" name="emailLabel" required>Email:</label>
-                <input type="email" id="enquiry_email" name="email" required />
+                <input class='input-field' type="email" id="enquiry_email" name="email" />
             </p>
 
-            <label class='bold' name="caketypeLabel" required>Type of cake:</label>
-            <p>
-                <input class='bold' type="checkbox" value="type_cup" id="cup" name="cakes" />
-                <label for="cup">Cupcakes</label>
+            <p class='margin-top'>
+                <label class='bold' name="caketypeLabel" required>Type of cake:</label>
+                <p>
+                    <input class='bold' type="checkbox" value="type_cup" id="cup" name="cakes" />
+                    <label for="cup">Cupcakes</label>
+                </p>
+                <p>
+                    <input type="checkbox" value="type_cheese" id="cheese" name="cakes" />
+                    <label for="cheese">Cheesecakes</label>
+                </p>
+                <p>
+                    <input type="checkbox" value="type_butter" id="butter" name="cakes" />
+                    <label for="butter">Butter cakes</label>
+                </p>
+                <p>
+                    <input type="checkbox" value="type_mud" id="mud" name="cakes" />
+                    <label for="mud">Mudcakes</label>
+                </p>
             </p>
-            <p>
-                <input type="checkbox" value="type_cheese" id="cheese" name="cakes" />
-                <label for="cheese">Cheesecakes</label>
-            </p>
-            <p>
-                <input type="checkbox" value="type_butter" id="butter" name="cakes" />
-                <label for="butter">Butter cakes</label>
-            </p>
-            <p>
-                <input type="checkbox" value="type_mud" id="mud" name="cakes" />
-                <label for="mud">Mudcakes</label>
+            
+            <p class='margin-top'>
+                <label class='bold' for="caketype" name="caketypeLabel" required>Celebration type:</label>
+                <p><input type="radio" value="celebration_birthday" id="birthday" name="celebration" required class='input-radio'/><label>Birthday</label></p>
+                <p><input type="radio" value="celebration_wedding" id="wedding" name="celebration" required class='input-radio'/><label>Wedding</label></p>
+                <p><input type="radio" value="celebration_corporate" id="corporate" name="celebration" required class='input-radio'/><label>Corporate</label></p>
+                <p><input type="radio" value="celebration_other" id="other" name="celebration" required class='input-radio'/><label>Other</label></p>
+                <input class='input-field' type="text" name="other" id="other_input" required />
             </p>
 
-            <label class='bold' for="caketype" name="caketypeLabel" required>Celebration type:</label>
-            <p><input type="radio" value="celebration_birthday" id="birthday" name="celebration" required/><label>Birthday</label></p>
-            <p><input type="radio" value="celebration_wedding" id="wedding" name="celebration" required/><label>celebration_wedding</label></p>
-            <p><input type="radio" value="celebration_corporate" id="corporate" name="celebration" required/><label>Corporate</label></p>
-            <p><input type="radio" value="celebration_other" id="other" name="celebration" required/><label>Other</label></p>
-            <input type="text" name="other" id="other_input" required />
-
-            <p>
+            <p class='margin-top margin-bottom'>
                 <label class='bold' for="caketype" name="caketypeLabel" required>Tell us about your dream cake:</label><br/>
-                <textarea></textarea>
+                <textarea class='textarea-field'></textarea>
             </p>
-
-            <input type='submit' value='Send away' />
-            <input type='reset' value='Restart' />
-
+            <p class='margin-top margin-bottom'>
+                <input type='submit' class='btn-submit' value='Send away' />
+                <input type='reset' class='btn-reset' value='Restart' />
+            </p>
+            </fieldset>
         </form>
     </body>
 </html>
